@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +24,7 @@
     html { scroll-behavior: smooth; }
 
     body {
-      background: var(--bg);
+      
       color: var(--text);
       font-family: 'Nunito', sans-serif;
       font-weight: 400;
@@ -210,7 +211,7 @@
       padding: 14px 28px;
       border-radius: 12px;
       text-decoration: none;
-      border: 2px solid var(--border);
+      
       transition: transform 0.15s, border-color 0.15s;
     }
 
@@ -255,7 +256,7 @@
 
     .app-card {
       background: var(--surface);
-      border: 2px solid var(--border);
+      
       border-radius: 20px;
       padding: 28px;
       transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
@@ -287,18 +288,18 @@
     }
 
     .app-icon {
-      width: 72px; height: 72px;
-      border-radius: 16px;
+      width: 120px; height: 120px;
+      border-radius: 24px;
       object-fit: contain;
-      background: var(--bg);
-      border: 2px solid var(--border);
-      padding: 6px;
+      
+      
+      
       flex-shrink: 0;
     }
 
     .app-icon-placeholder {
-      width: 72px; height: 72px;
-      border-radius: 16px;
+      width: 120px; height: 120px;
+      border-radius: 24px;
       background: linear-gradient(135deg, var(--orange), var(--yellow));
       display: flex;
       align-items: center;
@@ -371,14 +372,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: var(--bg);
+      
       color: var(--muted);
       font-weight: 700;
       font-size: 0.85rem;
       padding: 11px 14px;
       border-radius: 10px;
       text-decoration: none;
-      border: 2px solid var(--border);
+      
       transition: border-color 0.15s, color 0.15s;
     }
 
@@ -510,7 +511,7 @@
   <div class="app-grid">
     <div class="app-card">
       <div class="app-card-top">
-        <img src="https://storcke64.github.io/hts-time/hts-logo.png"
+        <img src="https://storcke64.github.io/hts-time/logo.png"
              alt="HTS Time System"
              class="app-icon"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
@@ -538,9 +539,29 @@
 <div class="repo-banner" id="add-repo">
   <h3>Add Our Repository</h3>
   <p>Add the Storcke64 store to your system once and get all apps — plus automatic updates.</p>
-  <div class="code-block">flatpak remote-add --user --if-not-exists --no-gpg-verify storcke64-hts https://storcke64.github.io/hts-time/
-</div>
+  <div class="code-block">flatpak remote-add --if-not-exists storcke64 https://storcke64.github.io/store/storcke64.flatpakrepo</div>
   <p style="font-size:0.85rem; opacity:0.75; margin:0">Then install: <code>flatpak install storcke64 com.storcke64.hts_time</code></p>
+</div>
+
+<div style="text-align:center; padding: 40px 20px; position:relative; z-index:1;">
+  <p style="font-family:'Nunito',sans-serif; font-weight:700; color:#6b7280; font-size:0.85rem; margin-bottom:16px; text-transform:uppercase; letter-spacing:1px;">Install our apps with</p>
+  <a href="#add-repo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80">
+      <defs><clipPath id="rounded"><rect width="240" height="80" rx="14" ry="14"/></clipPath></defs>
+      <rect width="240" height="80" rx="14" ry="14" fill="#1a1a2e"/>
+      <rect x="0" y="0" width="56" height="80" rx="0" fill="#ff6b2b" clip-path="url(#rounded)"/>
+      <rect x="42" y="0" width="14" height="80" fill="#ff6b2b"/>
+      <g transform="translate(10, 14)">
+        <rect x="2" y="14" width="32" height="22" rx="3" fill="white"/>
+        <rect x="2" y="14" width="32" height="9" rx="3" fill="rgba(255,255,255,0.7)"/>
+        <rect x="12" y="9" width="12" height="7" rx="2" fill="white"/>
+        <polygon points="18,30 12,23 24,23" fill="#ff6b2b"/>
+      </g>
+      <text x="72" y="29" font-family="Arial, sans-serif" font-weight="400" font-size="11" fill="#aaaaaa" letter-spacing="1.5">GET IT ON</text>
+      <text x="71" y="57" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="24" fill="#ffffff">Storcke64</text>
+      <rect width="240" height="80" rx="14" ry="14" fill="none" stroke="#333355" stroke-width="1.5"/>
+    </svg>
+  </a>
 </div>
 
 <footer>
