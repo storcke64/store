@@ -538,7 +538,8 @@
 <div class="repo-banner" id="add-repo">
   <h3>Add Our Repository</h3>
   <p>Add the Storcke64 store to your system once and get all apps — plus automatic updates.</p>
-  <div class="code-block">flatpak remote-add --if-not-exists storcke64 https://storcke64.github.io/store/storcke64.flatpakrepo</div>
+  <div class="code-block">flatpak remote-add --user --if-not-exists --no-gpg-verify storcke64-hts https://storcke64.github.io/hts-time/
+</div>
   <p style="font-size:0.85rem; opacity:0.75; margin:0">Then install: <code>flatpak install storcke64 com.storcke64.hts_time</code></p>
 </div>
 
